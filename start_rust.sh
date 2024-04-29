@@ -159,7 +159,7 @@ if [ "$LOGROTATE_ENABLED" = "1" ]; then
 	echo "Log rotation enabled!"
 
 	# Log to stdout by default
-	RUST_STARTUP_COMMAND="$RUST_STARTUP_COMMAND -logfile /dev/stdout"
+	RUST_STARTUP_COMMAND="$RUST_STARTUP_COMMAND -logfile -"
 	echo "Using startup arguments: $RUST_SERVER_STARTUP_ARGUMENTS"
 
 	# Create the logging directory structure

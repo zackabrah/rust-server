@@ -179,7 +179,7 @@ else
 fi
 
 # Disable logging to stdout/stderr if "-logfile /dev/" is used
-STDLOG_ENABLED=1
+STDLOG_ENABLED=0
 if [[ $RUST_STARTUP_COMMAND_LOWERCASE == *" -logfile /dev/"* ]]; then
 	echo "Disabling internal stdout/stderr logging!"
 	STDLOG_ENABLED=0
